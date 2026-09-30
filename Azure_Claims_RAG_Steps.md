@@ -1,13 +1,12 @@
 # Building a Claims-Handler RAG Agent on Azure
-### From first login to a RAGAS-evaluated, citation-grounded retrieval agent
 
-**Scope covered:** Azure onboarding → data ingestion → layout-aware parsing/chunking → hybrid retrieval (BM25 + dense) → BGE-Reranker → grounded generation with inline citations → 50-question golden set → RAGAS evaluation.
+**Scope covered:** Data ingestion → layout-aware parsing/chunking → hybrid retrieval (BM25 + dense) → BGE-Reranker → grounded generation with inline citations → 50-question golden set → RAGAS evaluation.
 
 **Use case framing:** ingest the policy wordings, endorsements, and claims FAQs (e.g., the specimen CA-PAP policy packets, endorsement forms, and SERFF rate/rule pages) so claim handlers get one grounded answer with a citation back to the exact form/page, instead of hunting across PDFs.
 
 ---
 
-## Phase 0 — Azure account setup (first-time login)
+## Phase 0 — Azure account setup
 
 1. **Create the account.** Go to `portal.azure.com`. If you don't have a tenant, sign up at `azure.microsoft.com/free` — this creates an Entra ID (Azure AD) tenant and a Pay-As-You-Go or free-tier subscription tied to it.
 2. **First login.** Sign in with the Microsoft account you used to sign up. Azure will drop you into the **Azure Portal Home**. Confirm your subscription is active: **Subscriptions** (left search bar) → you should see one subscription with a status of *Active*.
